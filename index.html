@@ -9,38 +9,70 @@
   <body>
     <div>
       <div class = "calculator card">
+        <form name="form">
         <div class = "layar">
-          <h1 id="display-number">0</h1>
-
+          <input type="text" placeholder="0" name="displayResult" id="result" />
         </div>
+
         <div class = "kolom-tombol">
           <div class = "baris">
-            <div class="tombol">7</div>
-            <div class="tombol">8</div>
-            <div class="tombol">9</div>
-            <div class="tombol negativ">+/-</div>
+            <div class="tombol">
+              <input type="button" name="b7" value="7" onClick="calcNumbers(b7.value)">
+            </div>
+            <div class="tombol">
+              <input type="button" name="b8" value="8" onClick="calcNumbers(b8.value)">
+            </div>
+            <div class="tombol">
+              <input type="button" name="b9" value="9" onClick="calcNumbers(b9.value)">
+            </div>
+            <div class="tombol negativ">
+              <input type="button" name="negativ" value="+/-" onClick="calcNumbers(negativ.value)">
+            </div>
 
 
           </div>
           <div class = "baris">
-            <div class="tombol">4</div>
-            <div class="tombol">5</div>
-            <div class="tombol">6</div>
-            <div class="tombol operator">-</div>
+            <div class="tombol">
+              <input type="button" name="b4" value="4" onClick="calcNumbers(b4.value)">
+            </div>
+            <div class="tombol">
+              <input type="button" name="b5" value="5" onClick="calcNumbers(b5.value)">
+            </div>
+            <div class="tombol">
+              <input type="button" name="b6" value="6" onClick="calcNumbers(b6.value)">
+            </div>
+            <div class="tombol operator">
+              <input type="button" name="kurang" value="-" onClick="calcNumbers(kurang.value)">
+            </div>
             
           </div>
           <div class = "baris">
-            <div class="tombol">1</div>
-            <div class="tombol">2</div>
-            <div class="tombol">3</div>
-            <div class="tombol operator">+</div>
+            <div class="tombol">
+              <input type="button" name="b1" value="1" onClick="calcNumbers(b1.value)">
+            </div>
+            <div class="tombol">
+              <input type="button" name="b2" value="2" onClick="calcNumbers(b2.value)">
+            </div>
+            <div class="tombol">
+              <input type="button" name="b3" value="3" onClick="calcNumbers(b3.value)">
+            </div>
+            <div class="tombol operator">
+              <input type="button" name="tambah" value="+" onClick="calcNumbers(tambah.value)">
+            </div>
           </div>
           <div class = "baris">
-            <div class="tombol clear">CE</div>
-            <div class="tombol">0</div>
-            <div class="tombol equals">=</div>
+            <div class="tombol clear">
+              <input type="button" name="clear" value="CE" onClick="clearScreen()">
+            </div>
+            <div class="tombol">
+              <input type="button" name="b0" value="0" onClick="calcNumbers(b0.value)">
+            </div>
+            <div class="tombol equals">
+              <input type="button" name="equal" value="=" onClick="displayResult.value=eval(displayResult.value)">
+            </div>
           </div>
         </div>
+      </form>
       </div>
     </div>
   <script src="script.js"></script>
